@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets 
+    author="RussWinch"
+    version="1.2"
+    shortdescription=" HOT validator tools"
+    description="A number of presets designed for humanitarian mapping with HOT - should be helpful for validators">
+	<group name="Validation Tools">    
+    	<item name="Building" icon="building.png" type="closedway">
+        	<key key="building" value="yes" />
+    	</item>
+    	
+    	<item name="Building construction" icon="building_cons.png" type="closedway">
+        	<key key="building" value="construction" />
+    	</item>
+    	
+    	<item name="Tertiary" icon="tertiary.png" type="way,closedway">
+            <key key="highway" value="tertiary" />
+            <!-- uncommenting the below produces a popup for surface type. Default wasn't working with JOSM v8969, 
+            despite being documented and found used this way all should default to paved, except path-->
+            <!--
+            <space />
+        	<label text="Surface of Tertiary road:" />
+			<space />
+        	<combo key="surface" text="Surface" values="paved, unpaved, asphalt, cobblestone, concrete, ground, sand, gravel" default="paved"/>
+        	-->
+        	
+        	<!-- uncommenting the following adds a surface tag, with no popup - adjust value as required-->
+        	<!-- 
+        	<key key="surface" value="paved" />
+        	-->
+        	
+        </item>
+
+    	<item name="Unclassified" icon="unclassified.png" type="way,closedway">
+            <key key="highway" value="unclassified" />
+        </item>
+        
+        <item name="Residential" icon="residential.png" type="way,closedway">
+            <key key="highway" value="residential" />
+        </item>
+                
+        <item name="Track" icon="track.png" type="way,closedway">
+            <key key="highway" value="track" />
+        </item>
+        
+        <item name="Path" icon="path.png" type="way,closedway">
+            <key key="highway" value="path" />
+        </item>
+    </group>
+</presets>
