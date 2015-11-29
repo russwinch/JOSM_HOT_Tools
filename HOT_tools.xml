@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets 
     author="RussWinch"
-    version="1.2"
-    shortdescription=" HOT validator tools"
-    description="A number of presets designed for humanitarian mapping with HOT - should be helpful for validators">
-	<group name="Validation Tools">    
+    version="1.3"
+    shortdescription=" HOT tools"
+    description="A number of presets designed for humanitarian mapping with HOT, specifically the Missing Maps project - should be helpful for validators too">
+	<group name="HOT Tools">    
     	<item name="Building" icon="building.png" type="closedway">
         	<key key="building" value="yes" />
     	</item>
