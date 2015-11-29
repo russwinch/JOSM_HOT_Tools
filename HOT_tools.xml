@@ -4,7 +4,16 @@
     version="1.3"
     shortdescription=" HOT tools"
     description="A number of presets designed for humanitarian mapping with HOT, specifically the Missing Maps project - should be helpful for validators too">
-	<group name="HOT Tools">    
+	<group name="HOT Tools">
+	    <item name="Building - options" icon="building.png" type="closedway">
+        	<label text="HOT building" />
+        	<space />
+        	<combo key="building" text="Built" default="yes">
+        		<list_entry value="yes" short_description="Complete building, with roof" />
+        		<list_entry value="construction" short_description="No roof, doesn't look habitable" />
+        	</combo>
+    	</item>
+	    
     	<item name="Building" icon="building.png" type="closedway">
         	<key key="building" value="yes" />
     	</item>
@@ -13,22 +22,41 @@
         	<key key="building" value="construction" />
     	</item>
     	
+    	<item name="Highway - options" icon="tertiary.png" type="way,closedway">
+        	<label text="HOT highways tags" />
+        	<space />
+        	<combo key="highway" text="Road type">
+            	<list_entry value="motorway" short_description="Way	A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder. Equivalent to the Freeway, Autobahn, etc" />
+            	<list_entry value="primary" short_description="The main axes connecting the big cities" />
+            	<list_entry value="secondary" short_description="The roads connecting with regional capital cities and the towns of some importance (health services, commerce, etc.)" />
+            	<list_entry value="tertiary" short_description="The roads interconnecting villages and the major streets in towns of some importance" />
+            	<list_entry value="unclassified" short_description="The roads serving for interconnection of smaller villages and hamlets" />
+            	<list_entry value="residential" short_description="Used for roads in the residential areas except the major streets that interconnect with various roads (ie. primary, secondary, tertiary)" />
+            	<list_entry value="track" short_description="The small roads going outside the residential areas, mainly for agricultural and forestry purposes. In general these roads do not have connecting function with other roads" />
+            	<list_entry value="path" short_description="Paths not large enough for cars and mainly for pedestrians, both inside and outside residential areas" />
+            </combo>
+            <space />
+        	<combo key="surface" text="Surface" values="unpaved,paved" />
+            <label text="Optional, only required if surface is not as expected, which is paved for all except track and path" />
+        	<space />
+        	<combo key="smoothness" text="Smoothness">
+				<list_entry value="excellent" short_description="Billiards" />
+				<list_entry value="good" short_description="Usable with racing bike" />
+				<list_entry value="intermediate" short_description="Usable with city bike, sport cars, scooter" />
+				<list_entry value="bad" short_description="Usable with trekking bike, normal cars. One can not exclude potholes" />
+				<list_entry value="very_bad" short_description="Usable with car with high clearance. Typically with 404 bachée. Normal cars can't go through" />
+				<list_entry value="horrible" short_description="4Wheel drive only" />
+				<list_entry value="very_horrible" short_description="4Wheel drive cars can't go through or it is very difficult, with help of winch. Usable with tractor, ATV, motorcycle, zebu carts" />
+				<list_entry value="impassable" short_description="No wheeled vehicle. Road damaged for instance" />
+			</combo>
+        	<label text="Optional, use only suggested when smoothness is bad or below" />
+        	<space />
+        	<label text="For information on use of these tags see the:" />
+        	<link text="Highway Tag Africa Wiki" href="http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa" />
+        </item>
+    	
     	<item name="Tertiary" icon="tertiary.png" type="way,closedway">
             <key key="highway" value="tertiary" />
-            <!-- uncommenting the below produces a popup for surface type. Default wasn't working with JOSM v8969, 
-            despite being documented and found used this way all should default to paved, except path-->
-            <!--
-            <space />
-        	<label text="Surface of Tertiary road:" />
-			<space />
-        	<combo key="surface" text="Surface" values="paved, unpaved, asphalt, cobblestone, concrete, ground, sand, gravel" default="paved"/>
-        	-->
-        	
-        	<!-- uncommenting the following adds a surface tag, with no popup - adjust value as required-->
-        	<!-- 
-        	<key key="surface" value="paved" />
-        	-->
-        	
         </item>
 
     	<item name="Unclassified" icon="unclassified.png" type="way,closedway">
