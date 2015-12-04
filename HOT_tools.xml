@@ -13,14 +13,6 @@
         		<list_entry value="construction" short_description="No roof, doesn't look habitable" />
         	</combo>
     	</item>
-	    
-    	<item name="Building" icon="building.png" type="closedway">
-        	<key key="building" value="yes" />
-    	</item>
-    	
-    	<item name="Building construction" icon="building_cons.png" type="closedway">
-        	<key key="building" value="construction" />
-    	</item>
     	
     	<item name="Highway - options" icon="tertiary.png" type="way,closedway">
         	<label text="HOT highways tags" />
@@ -54,25 +46,35 @@
         	<label text="For information on use of these tags see the:" />
         	<link text="Highway Tag Africa Wiki" href="http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa" />
         </item>
+        
+	    <group name="Advanced">
+ 		   	<item name="Building" icon="building.png" type="closedway">
+        		<key key="building" value="yes" />
+    		</item>
     	
-    	<item name="Tertiary" icon="tertiary.png" type="way,closedway">
-            <key key="highway" value="tertiary" />
-        </item>
+    		<item name="Building construction" icon="building_cons.png" type="closedway">
+        		<key key="building" value="construction" />
+    		</item>
+    	
+    		<item name="Tertiary" icon="tertiary.png" type="way,closedway">
+            	<key key="highway" value="tertiary" />
+        	</item>
 
-    	<item name="Unclassified" icon="unclassified.png" type="way,closedway">
-            <key key="highway" value="unclassified" />
-        </item>
+    		<item name="Unclassified" icon="unclassified.png" type="way,closedway">
+            	<key key="highway" value="unclassified" />
+        	</item>
         
-        <item name="Residential" icon="residential.png" type="way,closedway">
-            <key key="highway" value="residential" />
-        </item>
+        	<item name="Residential" icon="residential.png" type="way,closedway">
+            	<key key="highway" value="residential" />
+        	</item>
                 
-        <item name="Track" icon="track.png" type="way,closedway">
-            <key key="highway" value="track" />
-        </item>
+        	<item name="Track" icon="track.png" type="way,closedway">
+            	<key key="highway" value="track" />
+        	</item>
         
-        <item name="Path" icon="path.png" type="way,closedway">
-            <key key="highway" value="path" />
-        </item>
+        	<item name="Path" icon="path.png" type="way,closedway">
+            	<key key="highway" value="path" />
+        	</item>
+    	</group>
     </group>
 </presets>
