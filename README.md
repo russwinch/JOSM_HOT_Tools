@@ -15,5 +15,12 @@ Installation instructions
 
 More information
 ------------------
+<<<<<<< HEAD
 For information on use of these tags see the:
 [Highway Tag Africa Wiki](http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa)
+=======
+For information on use of tags for roads see the:
+[Highway Tag Africa Wiki](http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa)
+And for more general mapping info, see the guides on:
+[Learn OSM] (http://learnosm.org/en/coordination/humanitarian/)
+>>>>>>> develop
