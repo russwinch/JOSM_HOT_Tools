@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets 
     author="RussWinch"
-    version="1.3"
+    version="1.4"
     shortdescription=" HOT tools"
     description="A number of presets designed for humanitarian mapping with HOT, specifically the Missing Maps project - should be helpful for validators too">
 	<group name="HOT Tools">
 	    <item name="Building - options" icon="building.png" type="closedway">
-        	<label text="HOT building" />
+        	<label text="HOT building tags" />
         	<space />
-        	<combo key="building" text="Built" default="yes">
+        	<label text="Remember: all buildings should be squared [shortcut: Q] or circled [shortcut: O or shift+O]" />
+        	<space />
+        	<combo key="building" text="Building complete" default="yes">
         		<list_entry value="yes" short_description="Complete building, with roof" />
-        		<list_entry value="construction" short_description="No roof, doesn't look habitable" />
+        		<list_entry value="construction" short_description="Under construction, no roof, doesn't look habitable" />
         	</combo>
+        	<space />
+        	<label text="For information on tracing buildings see:" />
+        	<link text="Learn OSM" href="hhttp://learnosm.org/en/coordination/remote-tracing/#buildings---how-to-map" />
     	</item>
     	
     	<item name="Highway - options" icon="tertiary.png" type="way,closedway">
-        	<label text="HOT highways tags" />
+        	<label text="HOT highway tags" />
         	<space />
         	<combo key="highway" text="Road type">
             	<list_entry value="motorway" short_description="Way	A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder. Equivalent to the Freeway, Autobahn, etc" />
@@ -43,8 +48,9 @@
 			</combo>
         	<label text="Optional, use only suggested when smoothness is bad or below" />
         	<space />
-        	<label text="For information on use of these tags see the:" />
+        	<label text="For information on use of these tags see:" />
         	<link text="Highway Tag Africa Wiki" href="http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa" />
+        	<link text="Learn OSM" href="http://learnosm.org/en/coordination/remote-tracing/#roads" />        	
         </item>
         
 	    <group name="Advanced">
