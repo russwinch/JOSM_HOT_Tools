@@ -16,7 +16,7 @@
         	</combo>
         	<space />
         	<label text="For information on tracing buildings see:" />
-        	<link text="Learn OSM" href="hhttp://learnosm.org/en/coordination/remote-tracing/#buildings---how-to-map" />
+        	<link text="Learn OSM" href="http://learnosm.org/en/coordination/remote-tracing/#buildings---how-to-map" />
     	</item>
     	
     	<item name="Highway - options" icon="tertiary.png" type="way,closedway">
