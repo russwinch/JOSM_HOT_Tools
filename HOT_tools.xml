@@ -48,7 +48,7 @@
 			</combo>
         	<label text="Optional, suggested use only when smoothness is bad or below" />
         	<space />
-        	<label text="For information on use of these tags see the:" />
+        	<label text="For information on use of these tags see:" />
         	<link text="Highway Tag Africa Wiki" href="http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa" />
         	<link text="LearnOSM" href="http://learnosm.org/en/coordination/remote-tracing/#roads" />        	
         </item>
