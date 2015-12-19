@@ -50,7 +50,7 @@
         	<space />
         	<label text="For information on use of these tags see:" />
         	<link text="Highway Tag Africa Wiki" href="http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa" />
-        	<link text="Learn OSM" href="http://learnosm.org/en/coordination/remote-tracing/#roads" />        	
+        	<link text="LearnOSM" href="http://learnosm.org/en/coordination/remote-tracing/#roads" />        	
         </item>
         
 	    <group name="Advanced">
