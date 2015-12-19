@@ -8,7 +8,7 @@
 	    <item name="Building - options" icon="building.png" type="closedway">
         	<label text="HOT building tags" />
         	<space />
-        	<label text="Remember: all buildings should be squared [shortcut: Q] or circled [shortcut: O or shift+O]" />
+        	<label text="Remember, all buildings should be squared [shortcut: Q] or circled [shortcut: O or shift+O]" />
         	<space />
         	<combo key="building" text="Building complete" default="yes">
         		<list_entry value="yes" short_description="Complete building, with roof" />
