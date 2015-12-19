@@ -6,7 +6,7 @@
     description="A number of presets designed for humanitarian mapping with HOT, specifically the Missing Maps project - should be helpful for validators too">
 	<group name="HOT Tools">
 	    <item name="Building - options" icon="building.png" type="closedway">
-        	<label text="HOT building" />
+        	<label text="HOT building tags" />
         	<space />
         	<label text="Remember, all buildings should be squared [shortcut: Q] or circled [shortcut: O or shift+O]" />
         	<space />
@@ -20,7 +20,7 @@
     	</item>
     	
     	<item name="Highway - options" icon="tertiary.png" type="way,closedway">
-        	<label text="HOT highways tags" />
+        	<label text="HOT highway tags" />
         	<space />
         	<combo key="highway" text="Road type">
             	<list_entry value="motorway" short_description="Way	A restricted access major divided highway, normally with 2 or more running lanes plus emergency hard shoulder. Equivalent to the Freeway, Autobahn, etc" />
