@@ -10,7 +10,7 @@
         	<space />
         	<combo key="building" text="Built" default="yes">
         		<list_entry value="yes" short_description="Complete building, with roof" />
-        		<list_entry value="construction" short_description="No roof, doesn't look habitable" />
+        		<list_entry value="construction" short_description="Under construction, no roof, does not appear habitable" />
         	</combo>
         	<space />
         	<label text="For information on tracing buildings see:" />
@@ -44,7 +44,7 @@
 				<list_entry value="very_horrible" short_description="4Wheel drive cars can't go through or it is very difficult, with help of winch. Usable with tractor, ATV, motorcycle, zebu carts" />
 				<list_entry value="impassable" short_description="No wheeled vehicle. Road damaged for instance" />
 			</combo>
-        	<label text="Optional, use only suggested when smoothness is bad or below" />
+        	<label text="Optional, suggested use only when smoothness is bad or below" />
         	<space />
         	<label text="For information on use of these tags see the:" />
         	<link text="Highway Tag Africa Wiki" href="http://wiki.openstreetmap.org/wiki/Highway_Tag_Africa" />
@@ -77,6 +77,10 @@
         
         	<item name="Path" icon="path.png" type="way,closedway">
             	<key key="highway" value="path" />
+        	</item>
+        	
+        	<item name="Residential landuse" icon="landuse.png" type="way,closedway">
+            	<key key="landuse" value="residential" />
         	</item>
     	</group>
     </group>
