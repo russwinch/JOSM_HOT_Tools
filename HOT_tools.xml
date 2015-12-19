@@ -8,7 +8,9 @@
 	    <item name="Building - options" icon="building.png" type="closedway">
         	<label text="HOT building" />
         	<space />
-        	<combo key="building" text="Built" default="yes">
+        	<label text="Remember, all buildings should be squared [shortcut: Q] or circled [shortcut: O or shift+O]" />
+        	<space />
+        	<combo key="building" text="Building complete" default="yes">
         		<list_entry value="yes" short_description="Complete building, with roof" />
         		<list_entry value="construction" short_description="Under construction, no roof, does not appear habitable" />
         	</combo>
